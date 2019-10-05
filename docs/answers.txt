@@ -1,0 +1,67 @@
+(a) Paste the console output you saved at the end of step 3.C (2 points)
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 806 bytes | 403.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/lizparra/assignment2.git
+   c9efaa6..889a28d  master -> master
+
+(b) How many commits have been done to the repository (not only by you, but by
+anyone) so far? Write the git command you used to get this information (4 points)
+Number of commits: 10
+Git Command: git shortlog -s
+
+(c) When was the .gitignore file modified last? Write the git command you used to get
+this information (4 points)
+When: Wed Sep 25 18:13:30 2019
+Git Command: git log -- .gitignore
+
+(d) Mention two reasons why branches are used in a Git repository (4 points)
+Reason 1: Doesn’t take up much disk space, it’s computationally easy to move between branches, and it’s (relatively) easy to merge branches together 
+Reason 2: Makes it easier to work collaboratively on a project. When you merge two branches together, the commit histories get merged together as well, so all the changes you made in 
+each branch gets combined back into a single lineage.
+
+
+(e) What is the difference between git log and git status? (4 points)
+Git Log: allows you to review and read a history of everything that happens to a repository
+Git Status: displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked.
+
+(f) What command would you use to see the commits where “Vehicle.h” was one of the
+committed files? (4 points)
+Git Command: git log Vehicle.h
+
+(g) What command would you use to see the commits whose commit message contains the
+word “file”? (4 points)
+Git Command: git log --grep=file
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II) What is
+polymorphism? (III) What is encapsulation? (6 points)
+(I) Inheritance is the mechanism of basing an object or class upon another object or class, retaining similar implementation
+(II) Polymorphism is a programming language's ability to process objects differently depending on their data type or class. It is the ability to redefine methods for derived classes
+(III) Encapsulation is the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an objects components
+
+Read the “Git Commands, workflow, and resources.pdf” file on Canvas and answer the
+following questions:
+(i) What is the main difference between the “Dictator and Lieutenants” workflow and the
+“Integration manager” workflow? (5 points)
+Dictator and Lieutenants:
+One central/blessed repository: Everyone makes pull
+from this repository. Only the dictator can push to it.
+Dictator repository: Merges changes in the lieutenant
+repositories and solves any arising conflicts.
+Lieutenant repositories: Merges changes for some
+(not all) developers and solves conflicts. A developer
+pushes changes to the assigned lieutenant repository
+
+Integration Manager: Each developer makes push to his/her own public repository, and pull from the blessed/central repository. Integration conflict resolution are done by the integration manager.
+(Centralized integration). Each developer makes pull and push to his/her own public repository.
+
+(j) How would a team of 100 developers benefit from following the “Dictator and
+Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+A team of developers would benefit from the Dictator and Lieutenants workflow since they can all commit their
+changes to the same repository and solve any arising conflicts in the dictator repository. In the Centralized workflow,
+a developer could have made unfinished progress but before pushing he needs to pull in changes, so this may cause 
+changes in the current code progress. This can cause many conflicts with other developers and merging.
