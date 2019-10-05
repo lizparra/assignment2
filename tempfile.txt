@@ -1,9 +1,0 @@
-Enumerating objects: 9, done.
-Counting objects: 100% (9/9), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (7/7), 806 bytes | 403.00 KiB/s, done.
-Total 7 (delta 2), reused 0 (delta 0)
-remote: Resolving deltas: 100% (2/2), completed with 1 local object.
-To https://github.com/lizparra/assignment2.git
-   c9efaa6..889a28d  master -> master
