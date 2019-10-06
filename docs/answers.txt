@@ -65,3 +65,16 @@ A team of developers would benefit from the Dictator and Lieutenants workflow si
 changes to the same repository and solve any arising conflicts in the dictator repository. In the Centralized workflow,
 a developer could have made unfinished progress but before pushing he needs to pull in changes, so this may cause 
 changes in the current code progress. This can cause many conflicts with other developers and merging.
+
+
+5. OOP Principles
+Is the Driving simulator prototype using polymorphism and/or encapsulation? If you find that
+the prototype is using any of these two OOP principles, please discuss in which way the
+prototype is using it.
+
+The Driving simulator prototype is using polymorphism and encapsulation. It is using encapsulation
+because we are using classes in which we have defined methods and data. Therefore, we 
+can create objects which have restricted data and methods. Each class is a form of encapsulation.
+We are also using polymorphism because we are using virtual functions which is a form of run time 
+polymorphism. We are creating member functions which are declared within a base class and 
+being redefined or overriden by a derived class. This is how we are using polymorphism. 
